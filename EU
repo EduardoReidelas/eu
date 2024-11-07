@@ -1,0 +1,136 @@
+Microsoft Windows [versão 10.0.19045.5011]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Alunos> git clone https://github.com/EduardoReidelas/trabalho-sigma
+Cloning into 'trabalho-sigma'...
+warning: You appear to have cloned an empty repository.
+
+C:\Users\Alunos> cd trabalho-sigma
+
+C:\Users\Alunos\trabalho-sigma> pwd
+'pwd' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\Alunos\trabalho-sigma>pwd
+'pwd' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\Alunos\trabalho-sigma> echo %eu%
+%eu%
+
+C:\Users\Alunos\trabalho-sigma>hostname.txt
+'hostname.txt' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\Alunos\trabalho-sigma>ipconfig
+
+Configuração de IP do Windows
+
+
+Adaptador Ethernet Ethernet 2:
+
+   Sufixo DNS específico de conexão. . . . . . :
+   Endereço IPv6 de link local . . . . . . . . : fe80::f23c:9b2d:ce75:d673%10
+   Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.56.1
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Gateway Padrão. . . . . . . . . . . . . . . :
+
+Adaptador Ethernet Ethernet:
+
+   Sufixo DNS específico de conexão. . . . . . :
+   Endereço IPv6 de link local . . . . . . . . : fe80::82cc:db79:b5bf:15a2%16
+   Endereço IPv4. . . . . . . .  . . . . . . . : 10.67.168.115
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.254.0
+   Gateway Padrão. . . . . . . . . . . . . . . : 10.67.168.1
+
+Adaptador Ethernet vEthernet (Default Switch):
+
+   Sufixo DNS específico de conexão. . . . . . :
+   Endereço IPv6 de link local . . . . . . . . : fe80::e839:a79c:342f:e940%31
+   Endereço IPv4. . . . . . . .  . . . . . . . : 172.23.64.1
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.240.0
+   Gateway Padrão. . . . . . . . . . . . . . . :
+
+C:\Users\Alunos\trabalho-sigma>ipconfig findstr "IPv4" > ip_address.txt
+
+C:\Users\Alunos\trabalho-sigma>notepad ip_address.txt
+
+C:\Users\Alunos\trabalho-sigma>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ip_address.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Alunos\trabalho-sigma>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\Alunos\trabalho-sigma>git add hostname.txt
+fatal: pathspec 'hostname.txt' did not match any files
+
+C:\Users\Alunos\trabalho-sigma>git add ip_adress.txt
+fatal: pathspec 'ip_adress.txt' did not match any files
+
+C:\Users\Alunos\trabalho-sigma>git commit -m "adiciona arquivos com hostname e IP"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ip_address.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Alunos\trabalho-sigma>git log
+fatal: your current branch 'main' does not have any commits yet
+
+C:\Users\Alunos\trabalho-sigma>
+
+Alunos@L1-14 MINGW64 ~
+$ git config --global user.name "eu"
+
+Alunos@L1-14 MINGW64 ~
+$  git config user.name "eu"
+fatal: not in a git directory
+
+Alunos@L1-14 MINGW64 ~
+$ git gonfig --global user.name "trabalho-sigma"
+git: 'gonfig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+Alunos@L1-14 MINGW64 ~
+$ git config --global user.name "trabalho-sigma"
+
+Alunos@L1-14 MINGW64 ~
+$ git config --global user.email "eduardo@gmail.com"
+
+Alunos@L1-14 MINGW64 ~
+$ git config --global user.name
+trabalho-sigma
+
+Alunos@L1-14 MINGW64 ~
+$ git config --global user.email
+eduardo@gmail.com
+
+Alunos@L1-14 MINGW64 ~
+$ hostname
+L1-14
+
+Alunos@L1-14 MINGW64 ~
+$ hostname > hostname.txt
+
+Alunos@L1-14 MINGW64 ~
+$ pwd
+/c/Users/Alunos
+
+
